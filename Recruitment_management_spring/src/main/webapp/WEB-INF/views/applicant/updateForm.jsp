@@ -39,10 +39,9 @@
             const i1Score = parseInt(document.getElementById('i1_score').value) || 0; // 면접관 1 점수
             const i2Score = parseInt(document.getElementById('i2_score').value) || 0; // 면접관 2 점수
             const i3Score = parseInt(document.getElementById('i3_score').value) || 0; // 면접관 3 점수
-
             const interviewAverage = (i1Score + i2Score + i3Score) / 3;
-
             const totalScore = (dScore * 0.2) + (wScore * 0.4) + (interviewAverage * 0.4);
+            
             document.getElementById('total_score').value = totalScore.toFixed(2); 
         }
     </script>
